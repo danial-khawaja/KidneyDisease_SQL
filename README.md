@@ -53,9 +53,9 @@ FROM Kidney_Disease
 WHERE bgr > 140;
 
 --Count the number of patients with diabetes mellitus who have pedal edema:
-SELECT COUNT(*) 
-FROM Kidney_Disease 
-WHERE dm = 'yes' 
+SELECT COUNT(*)
+FROM Kidney_Disease
+WHERE dm = 'yes'
 AND pe = 'yes';
 
 --Calculate the average hemoglobin levels of patients with hypertension and anemia:
