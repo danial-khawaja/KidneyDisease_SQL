@@ -5,7 +5,7 @@ Introduction:
 
 Chronic kidney disease is a serious medical condition that affects a significant proportion of the population. Through my data analysis and usage of statistical techniques, I will investigate the medical data to identify trends, and patterns in CKD patients. My findings can be used to improve early diagnosis and treatment of chronic kidney disease, and to develop preventive measures to reduce its incidence.
 
-- Dataset link on Kaggle: https://www.kaggle.com/datasets/mansoordaku/ckdisease
+- Dataset link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
 
 Code abbreviations for patient attributes: 
 
