@@ -243,12 +243,19 @@ The original Excel file was imported into SQL server and missing values were imp
 Data Analysis - The following trends were identified in the data:
 
 Out of the 400 patients, 250 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd.
+
 The average age of patients with ckd was 54 years, with a minimum age of 15 and a maximum age of 90 years.
+
 The average serum creatinine level of patients with ckd was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
+
 183 patients out of 250 with ckd had hypertension (73.2%), while only 15 patients out of 150 without ckd had hypertension (10%).
+
 108 patients out of 250 with ckd had diabetes mellitus (43.2%), while only 15 patients out of 150 without ckd had diabetes mellitus (10%).
+
 The average hemoglobin level of patients with ckd was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL.
+
 179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
+
 141 patients out of 250 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
 Insights:
