@@ -1,7 +1,13 @@
 # CKDProject_SQL
 SQL queries and comments for my Kidney Disease Data Analysis Portfolio Project
 
-Code abbreviations for medical factors: 
+Introduction:
+
+Chronic kidney disease is a serious medical condition that affects a significant proportion of the population. Through my data analysis and usage of statistical techniques, I will investigate the medical data to identify trends, and patterns in CKD patients. My findings can be used to improve early diagnosis and treatment of chronic kidney disease, and to develop preventive measures to reduce its incidence.
+
+- Dataset link on Kaggle: https://www.kaggle.com/datasets/mansoordaku/ckdisease
+
+Code abbreviations for patient attributes: 
 
 age = age
 
@@ -222,11 +228,42 @@ ________________________________________________________________________________
        FROM Kidney_Disease
        GROUP BY classification;
 
+____________________________________________________________________________________________________________________________________________________________________
 
+Dataset Report: Summary & Insights
 
+Data Exploration:
 
+The dataset consists of 25 columns (patient attributes) and 400 rows (# of patients) which describe the medical conditions of patients with chronic kidney disease. The dataset has some missing values and inconsistent data types. This was cleaned in Excel and imported into SQL server. The columns include age, blood pressure, specific gravity, albumin, sugar, red blood cells, pus cell, pus cell clumps, bacteria, blood glucose random, blood urea, serum creatinine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, red blood cell count, hypertension, diabetes mellitus, coronary artery disease, appetite, pedal edema, anemia, and classification (ckd or notckd).
 
+Data Cleaning:
 
+The original Excel file was imported into SQL server and missing values were imputed with either the mean or mode of the respective column depending on the data type. The inconsistent data types were converted to their respective data types. The column 'classification' was transformed into a binary variable where 1 represents ckd and 0 represents notckd.
+
+Data Analysis - The following trends were identified in the data:
+
+Out of the 400 patients, 250 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd.
+The average age of patients with ckd was 54 years, with a minimum age of 15 and a maximum age of 90 years.
+The average serum creatinine level of patients with ckd was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
+183 patients out of 250 with ckd had hypertension (73.2%), while only 15 patients out of 150 without ckd had hypertension (10%).
+108 patients out of 250 with ckd had diabetes mellitus (43.2%), while only 15 patients out of 150 without ckd had diabetes mellitus (10%).
+The average hemoglobin level of patients with ckd was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL.
+179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
+141 patients out of 250 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
+
+I found that the mean age of patients with CKD is higher than that of patients without CKD, with a statistically significant difference of 6 years. Additionally, I found that patients with CKD tend to have higher levels of serum creatinine and blood urea, which are markers of kidney function. This is expected as CKD is a condition that results in decreased kidney function.
+
+Moreover, patients with CKD tend to have higher levels of hypertension and diabetes mellitus, both of which are known risk factors for the development of CKD. Interestingly, I found that patients with CKD have lower levels of hemoglobin, packed cell volume, and red blood cell count, indicating a possible association between CKD and anemia.
+
+When comparing the mean values of various lab results for patients with and without CKD, I found that there are significant differences in the levels of serum creatinine, blood urea, and hemoglobin, all of which have been previously linked to CKD.
+
+Finally, I also analyzed the prevalence of different symptoms and comorbidities in patients with CKD. We found that pedal edema, anemia, and hypertension were the most commonly reported symptoms, while hypertension, diabetes mellitus, and coronary artery disease were the most commonly reported comorbidities.
+
+Overall, this data analysis suggests that age, hypertension, diabetes mellitus, and anemia are all significant risk factors for CKD. Further research is needed to fully understand the complex relationships between these variables and the development and progression of CKD. Additionally, my findings underscore the importance of regular monitoring of kidney function and early detection and management of risk factors for CKD.
+
+Conclusion: 
+
+Overall, this data analysis suggests that age, hypertension, diabetes mellitus, and anemia are all significant risk factors for CKD. Further research is needed to fully understand the complex relationships between these variables and the development and progression of CKD. Additionally, my findings underscore the importance of regular monitoring of kidney function and early detection and management of risk factors for CKD.
 
 
 
