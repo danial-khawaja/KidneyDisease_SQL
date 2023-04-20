@@ -1,5 +1,5 @@
 # Chronic Kidney Disease Data Analysis
-SQL queries and comments for my Kidney Disease Data Analysis Portfolio Project
+
 
 Introduction:
 
