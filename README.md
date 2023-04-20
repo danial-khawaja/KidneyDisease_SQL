@@ -59,7 +59,7 @@ ane = anemia
 
 _______________________________________________________________________________________________________________________________________________________________________
 
-(Initial analysis)
+(Initial analysis of patient attributes)
 
 --Count the number of patients with hypertension:
 
@@ -113,7 +113,7 @@ ________________________________________________________________________________
 
 _______________________________________________________________________________________________________________________________________________________________________
 
-(These queries will help to analyze the trends in chronic kidney disease and provide insights into the common characteristics and conditions associated with the disease.)
+(CKD Analysis - These queries will help to analyze the trends in chronic kidney disease and provide insights into the common characteristics and conditions associated with the disease.)
 
 --Count the number of patients with chronic kidney disease:
 
@@ -164,7 +164,7 @@ ________________________________________________________________________________
        WHERE classification = 'ckd' AND pe = 'yes';
 
 _______________________________________________________________________________________________________________________________________________________________________
-(Advanced Queries)
+(Advanced Queries for Statistical Analysis)
 
 --Number of patients with chronic kidney disease and without chronic kidney disease:
 
