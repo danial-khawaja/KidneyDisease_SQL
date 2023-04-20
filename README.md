@@ -251,6 +251,8 @@ The average hemoglobin level of patients with ckd was 9.6 g/dL, with a minimum l
 179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
 141 patients out of 250 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
+Insights:
+
 I found that the mean age of patients with CKD is higher than that of patients without CKD, with a statistically significant difference of 6 years. Additionally, I found that patients with CKD tend to have higher levels of serum creatinine and blood urea, which are markers of kidney function. This is expected as CKD is a condition that results in decreased kidney function.
 
 Moreover, patients with CKD tend to have higher levels of hypertension and diabetes mellitus, both of which are known risk factors for the development of CKD. Interestingly, I found that patients with CKD have lower levels of hemoglobin, packed cell volume, and red blood cell count, indicating a possible association between CKD and anemia.
