@@ -261,8 +261,6 @@ When comparing the mean values of various lab results for patients with and with
 
 Finally, I also analyzed the prevalence of different symptoms and comorbidities in patients with CKD. We found that pedal edema, anemia, and hypertension were the most commonly reported symptoms, while hypertension, diabetes mellitus, and coronary artery disease were the most commonly reported comorbidities.
 
-Overall, this data analysis suggests that age, hypertension, diabetes mellitus, and anemia are all significant risk factors for CKD. Further research is needed to fully understand the complex relationships between these variables and the development and progression of CKD. Additionally, my findings underscore the importance of regular monitoring of kidney function and early detection and management of risk factors for CKD.
-
 Conclusion: 
 
 Overall, this data analysis suggests that age, hypertension, diabetes mellitus, and anemia are all significant risk factors for CKD. Further research is needed to fully understand the complex relationships between these variables and the development and progression of CKD. Additionally, my findings underscore the importance of regular monitoring of kidney function and early detection and management of risk factors for CKD.
