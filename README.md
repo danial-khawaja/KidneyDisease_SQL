@@ -232,31 +232,29 @@ ________________________________________________________________________________
 
 Dataset Report: Summary & Insights
 
+
 Data Exploration:
 
-The dataset consists of 25 columns (patient attributes) and 400 rows (# of patients) which describe the medical conditions of patients with chronic kidney disease. The dataset has some missing values and inconsistent data types. This was cleaned in Excel and imported into SQL server. The columns include age, blood pressure, specific gravity, albumin, sugar, red blood cells, pus cell, pus cell clumps, bacteria, blood glucose random, blood urea, serum creatinine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, red blood cell count, hypertension, diabetes mellitus, coronary artery disease, appetite, pedal edema, anemia, and classification (ckd or notckd).
+The dataset consists of 25 columns (patient attributes) and 400 rows (# of patients) which describe the medical conditions of patients with chronic kidney disease. The columns include age, blood pressure, specific gravity, albumin, sugar, red blood cells, pus cell, pus cell clumps, bacteria, blood glucose random, blood urea, serum creatinine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, red blood cell count, hypertension, diabetes mellitus, coronary artery disease, appetite, pedal edema, anemia, and classification (ckd or notckd).
 
 Data Cleaning:
 
-The original Excel file was imported into SQL server and missing values were imputed with either the mean or mode of the respective column depending on the data type. The inconsistent data types were converted to their respective data types. The column 'classification' was transformed into a binary variable where 1 represents ckd and 0 represents notckd.
+The original Excel file was imported into SQL server and missing values were allowed to remain NULL in order to maintain the accuracy of the statistics from this specific clinical dataset. The inconsistent data types were converted to their respective data types. The column 'classification' was transformed into a binary variable (bit) where 1 represents ckd and 0 represents notckd.
 
 Data Analysis - The following trends were identified in the data:
 
-Out of the 400 patients, 250 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd.
+Patient Demographics: Out of the 400 patients, 250 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years. Patients with CKD tend to be older than those without CKD, with a statistically significant difference of 6 years.
 
-The average age of patients with ckd was 54 years, with a minimum age of 15 and a maximum age of 90 years.
+Serum Creatinine: The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL. Patients with CKD tend to have higher levels of serum creatinine, which is a marker of kidney function.
 
-The average serum creatinine level of patients with ckd was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
+Hypertension: 183 patients out of 250 with CKD had hypertension (73.2%), while only 15 patients out of 150 without CKD had hypertension (10%). Patients with CKD tend to have higher levels of hypertension, which is a known risk factor for the development of CKD.
 
-183 patients out of 250 with ckd had hypertension (73.2%), while only 15 patients out of 150 without ckd had hypertension (10%).
+Diabetes Mellitus: 108 patients out of 250 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%). Patients with CKD tend to have higher levels of diabetes mellitus, which is a known risk factor for the development of CKD.
 
-108 patients out of 250 with ckd had diabetes mellitus (43.2%), while only 15 patients out of 150 without ckd had diabetes mellitus (10%).
+Hemoglobin & Anemia: The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%). Patients with CKD tend to have lower levels of hemoglobin, packed cell volume, and red blood cell
 
-The average hemoglobin level of patients with ckd was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL.
+Pedal Edema: 141 patients out of 250 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
-179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
-
-141 patients out of 250 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
 Insights:
 
@@ -267,6 +265,7 @@ Moreover, patients with CKD tend to have higher levels of hypertension and diabe
 When comparing the mean values of various lab results for patients with and without CKD, I found that there are significant differences in the levels of serum creatinine, blood urea, and hemoglobin, all of which have been previously linked to CKD.
 
 Finally, I also analyzed the prevalence of different symptoms and comorbidities in patients with CKD. We found that pedal edema, anemia, and hypertension were the most commonly reported symptoms, while hypertension, diabetes mellitus, and coronary artery disease were the most commonly reported comorbidities.
+
 
 Conclusion: 
 
