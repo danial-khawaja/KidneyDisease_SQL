@@ -243,28 +243,27 @@ The original Excel file was imported into SQL server and missing values were all
 
 Data Analysis - The following trends were identified in the data:
 
-Patient Demographics: Out of the 400 patients, 250 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years. Patients with CKD tend to be older than those without CKD, with a statistically significant difference of 6 years.
+Patient Demographics: Out of the 400 patients, 250 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
 
-Serum Creatinine: The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL. Patients with CKD tend to have higher levels of serum creatinine, which is a marker of kidney function.
+Serum Creatinine: The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
 
-Hypertension: 183 patients out of 250 with CKD had hypertension (73.2%), while only 15 patients out of 150 without CKD had hypertension (10%). Patients with CKD tend to have higher levels of hypertension, which is a known risk factor for the development of CKD.
+Hypertension: 183 patients out of 250 with CKD had hypertension (73.2%), while only 15 patients out of 150 without CKD had hypertension (10%).
 
-Diabetes Mellitus: 108 patients out of 250 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%). Patients with CKD tend to have higher levels of diabetes mellitus, which is a known risk factor for the development of CKD.
+Diabetes Mellitus: 108 patients out of 250 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
 
-Hemoglobin & Anemia: The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%). Patients with CKD tend to have lower levels of hemoglobin, packed cell volume, and red blood cell
+Hemoglobin & Anemia: The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
 
 Pedal Edema: 141 patients out of 250 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
-
 Insights:
 
-I found that the mean age of patients with CKD is higher than that of patients without CKD, with a statistically significant difference of 6 years. Additionally, I found that patients with CKD tend to have higher levels of serum creatinine and blood urea, which are markers of kidney function. This is expected as CKD is a condition that results in decreased kidney function.
+This data analysis has identified several important trends in the characteristics of patients with chronic kidney disease (CKD). Patients with CKD tend to be older, with a statistically significant difference of 6 years compared to those without CKD. This highlights the importance of regular monitoring of kidney function in elderly patients, especially those with known risk factors for CKD.
 
-Moreover, patients with CKD tend to have higher levels of hypertension and diabetes mellitus, both of which are known risk factors for the development of CKD. Interestingly, I found that patients with CKD have lower levels of hemoglobin, packed cell volume, and red blood cell count, indicating a possible association between CKD and anemia.
+Additionally, patients with CKD tend to have higher levels of serum creatinine, hypertension, and diabetes mellitus, all of which are established risk factors for the development and progression of CKD. These findings underscore the importance of early detection and management of these risk factors to prevent the onset and progression of CKD.
 
-When comparing the mean values of various lab results for patients with and without CKD, I found that there are significant differences in the levels of serum creatinine, blood urea, and hemoglobin, all of which have been previously linked to CKD.
+Furthermore, the data analysis revealed that patients with CKD have lower levels of hemoglobin, packed cell volume, and red blood cell count, indicating a high prevalence of anemia. Anemia is a common complication of CKD and is associated with increased morbidity and mortality. Healthcare providers should routinely screen patients with CKD for anemia and initiate appropriate treatment to improve patient outcomes.
 
-Finally, I also analyzed the prevalence of different symptoms and comorbidities in patients with CKD. We found that pedal edema, anemia, and hypertension were the most commonly reported symptoms, while hypertension, diabetes mellitus, and coronary artery disease were the most commonly reported comorbidities.
+Finally, this analysis highlights the importance of regular monitoring of symptoms and comorbidities in patients with CKD. Pedal edema was the most commonly reported symptom, while hypertension, diabetes mellitus, and coronary artery disease were the most commonly reported comorbidities. Healthcare providers should routinely assess and manage these conditions to improve patient outcomes.
 
 Action Items:
 
@@ -282,10 +281,7 @@ Encourage education and awareness campaigns to increase knowledge and understand
 
 Conclusion: 
 
-Overall, this data analysis suggests that age, hypertension, diabetes mellitus, and anemia are all significant risk factors for CKD. Further research is needed to fully understand the complex relationships between these variables and the development and progression of CKD. Additionally, my findings underscore the importance of regular monitoring of kidney function and early detection and management of risk factors for CKD.
-
-
-
+Overall, this data analysis highlights the significant impact of age, hypertension, diabetes mellitus, and anemia on the development and progression of CKD. Early detection and management of these risk factors, coupled with regular monitoring of kidney function, can help to prevent or slow down the progression of CKD. Through concerted efforts from healthcare providers, researchers, and policy makers, we can work together to improve the lives of those affected by CKD.
 
 
 
