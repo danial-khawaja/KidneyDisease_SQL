@@ -298,17 +298,17 @@ The original Excel file was imported into SQL server and missing values were all
 
 Data Analysis - The following statistics were identified in the data:
 
-Patient Demographics: Out of the 398 patients, 248 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
+Patient Demographics - Out of the 398 patients, 248 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
 
-Serum Creatinine: The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
+Serum Creatinine - The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
 
-Hypertension: 145 patients out of 248 with CKD had hypertension (58.47%), while 0 patients out of 150 without CKD had hypertension (0%).
+Hypertension - 145 patients out of 248 with CKD had hypertension (58.47%), while 0 patients out of 150 without CKD had hypertension (0%).
 
-Diabetes Mellitus: 108 patients out of 248 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
+Diabetes Mellitus - 108 patients out of 248 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
 
-Hemoglobin & Anemia: The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 248 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
+Hemoglobin & Anemia - The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 248 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
 
-Pedal Edema: 141 patients out of 248 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
+Pedal Edema - 141 patients out of 248 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
 Insights:
 
@@ -322,15 +322,15 @@ Finally, this analysis highlights the importance of regular monitoring of sympto
 
 Action Items:
 
-Healthcare Providers: Regular monitoring of kidney function and early detection and management of risk factors for CKD in patients, especially in those with hypertension and diabetes mellitus.
+Healthcare Providers - Regular monitoring of kidney function and early detection and management of risk factors for CKD in patients, especially in those with hypertension and diabetes mellitus.
 Awareness and management of anemia in CKD patients, which is associated with lower levels of hemoglobin, packed cell volume, and red blood cell count.
 Encourage lifestyle changes, such as reducing salt and sugar intake, maintaining a healthy weight, and engaging in regular physical activity to reduce the risk of CKD.
 
-Researchers: Further research to understand the complex relationships between age, hypertension, diabetes mellitus, and anemia and their contribution to the development and progression of CKD.
+Researchers - Further research to understand the complex relationships between age, hypertension, diabetes mellitus, and anemia and their contribution to the development and progression of CKD.
 Conduct studies to evaluate the effectiveness of different interventions in managing anemia in CKD patients.
 Investigate the potential of biomarkers, such as serum creatinine and blood urea, in predicting and monitoring CKD.
 
-Policy Makers: Develop policies and guidelines to improve the prevention, detection, and management of CKD.
+Policy Makers - Develop policies and guidelines to improve the prevention, detection, and management of CKD.
 Increase access to healthcare services and resources, especially for underserved communities who are at a higher risk of CKD.
 Encourage education and awareness campaigns to increase knowledge and understanding of the risk factors and prevention of CKD.
 
