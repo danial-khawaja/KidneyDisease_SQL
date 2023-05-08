@@ -11,7 +11,7 @@ Table Name: KidneyDisease
 
 Column Names and their values:
 
-id = patient id - (there are 400 total patients and values range from 0-399 and are arranged in ascending order to specify patient id)
+id = patient id - (there are 398 total patients and values range from 0-397 and are arranged in ascending order to specify patient id)
 
 age = age of the patient
 
@@ -298,17 +298,17 @@ The original Excel file was imported into SQL server and missing values were all
 
 Data Analysis - The following trends were identified in the data:
 
-Patient Demographics: Out of the 400 patients, 250 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
+Patient Demographics: Out of the 398 patients, 248 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
 
 Serum Creatinine: The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
 
-Hypertension: 183 patients out of 250 with CKD had hypertension (73.2%), while only 15 patients out of 150 without CKD had hypertension (10%).
+Hypertension: 183 patients out of 248 with CKD had hypertension (73.2%), while only 15 patients out of 150 without CKD had hypertension (10%).
 
-Diabetes Mellitus: 108 patients out of 250 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
+Diabetes Mellitus: 108 patients out of 248 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
 
-Hemoglobin & Anemia: The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 250 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
+Hemoglobin & Anemia: The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 248 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
 
-Pedal Edema: 141 patients out of 250 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
+Pedal Edema: 141 patients out of 248 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
 Insights:
 
