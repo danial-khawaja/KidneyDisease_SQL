@@ -114,89 +114,101 @@ ________________________________________________________________________________
               SELECT AVG(serum_creatinine) AS "Average Serum Creatinine of Patients without CKD"
               FROM KidneyDisease
               WHERE classification = 'notckd';
+             
+9. Calculate the average hemoglobin level of patients with chronic kidney disease:
 
-9. Calculate the average blood urea level of patients with chronic kidney disease:
+              SELECT AVG(hemoglobin) AS "Average Hemoglobin of Patients with CKD"
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
+
+10. Calculate the average hemoglobin level of patients without chronic kidney disease:
+
+              SELECT AVG(hemoglobin) AS "Average Hemoglobin of Patients without CKD"
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
+
+11. Calculate the average blood urea level of patients with chronic kidney disease:
 
               SELECT AVG(blood_urea) AS "Average Blood Urea of Patients with CKD"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
-10. Calculate the average blood urea level of patients without chronic kidney disease:
+12. Calculate the average blood urea level of patients without chronic kidney disease:
 
               SELECT AVG(blood_urea) AS "Average Blood Urea of Patients without CKD"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
-11. Calculate the average white blood cell count of patients with chronic kidney disease:
+13. Calculate the average white blood cell count of patients with chronic kidney disease:
 
               SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of Patients with CKD"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
-12. Calculate the average white blood cell count of patients without chronic kidney disease:
+14. Calculate the average white blood cell count of patients without chronic kidney disease:
 
               SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of Patients without CKD"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
-13. Calculate the average red blood cell count of patients with chronic kidney disease:
+15. Calculate the average red blood cell count of patients with chronic kidney disease:
 
               SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of Patients with CKD"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
-14. Calculate the average red blood cell count of patients without chronic kidney disease:
+16. Calculate the average red blood cell count of patients without chronic kidney disease:
  
               SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of Patients without CKD"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
-15. Count the number of patients with hypertension who have chronic kidney disease:
+17. Count the number of patients with hypertension who have chronic kidney disease:
 
               SELECT COUNT(*) AS "Number of Patients with CKD who have Hypertension"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND hypertension = 'yes';
 
-16. Calculate the percentage of patients with hypertension and chronic kidney disease:
+18. Calculate the percentage of patients with hypertension and chronic kidney disease:
 
               SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
               AS percentage_hypertension_ckd_patients
               FROM KidneyDisease
               WHERE hypertension = 'yes' AND classification = 'ckd';
 
-17. Count the number of patients with diabetes mellitus who have chronic kidney disease:
+19. Count the number of patients with diabetes mellitus who have chronic kidney disease:
 
               SELECT COUNT(*) AS "Number of Patients with CKD who have Diabetes Mellitus"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND diabetes_mellitus = 'yes';
 
-18. Calculate the percentage of patients with diabetes mellitus and chronic kidney disease:
+20. Calculate the percentage of patients with diabetes mellitus and chronic kidney disease:
 
               SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
               AS percentage_diabets_mellitus_ckd_patients
               FROM KidneyDisease
               WHERE diabetes_mellitus = 'yes' AND classification = 'ckd';
 
-19. Count the number of patients with anemia who have chronic kidney disease:
+21. Count the number of patients with anemia who have chronic kidney disease:
 
               SELECT COUNT(*) AS "Number of Patients with CKD who have Anemia"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND anemia = 'yes';
 
-20. Calculate the percentage of patients with anemia and chronic kidney disease:
+22. Calculate the percentage of patients with anemia and chronic kidney disease:
 
               SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
               AS percentage_anemia_ckd_patients
               FROM KidneyDisease
               WHERE anemia = 'yes' AND classification = 'ckd';
 
-21. Count the number of patients with pedal edema who have chronic kidney disease:
+23. Count the number of patients with pedal edema who have chronic kidney disease:
 
               SELECT COUNT(*) AS "Number of Patients with CKD who have Pedal Edema"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND pedal_edema = 'yes';
 
-22. Calculate the percentage of patients with pedal edema and chronic kidney disease:
+24. Calculate the percentage of patients with pedal edema and chronic kidney disease:
 
               SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
               AS percentage_pedal_edema_ckd_patients
