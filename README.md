@@ -218,69 +218,69 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________________________________
        
        
-(Advanced Queries for Statistical Analysis)
+(GROUP BY Queries for CKD Table Views)
 
 
 --Number of patients with chronic kidney disease and without chronic kidney disease:
 
        SELECT classification, COUNT(*) as total_patients
-       FROM Kidney_Disease
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Average age of patients with chronic kidney disease and without chronic kidney disease:
 
-       SELECT classification, AVG(age) as avg_age
-       FROM Kidney_Disease
+       SELECT classification, AVG(age) as average_age
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Proportion of patients with hypertension among those with and without chronic kidney disease:
 
        SELECT classification, COUNT(*) as total_patients,
-              ROUND(AVG(CASE WHEN htn = 'yes' THEN 1 ELSE 0 END)*100, 2) AS proportion_with_htn 
-       FROM Kidney_Disease
+              ROUND(AVG(CASE WHEN hypertension = 'yes' THEN 1 ELSE 0 END)*100, 2) AS proportion_with_hypertension 
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Proportion of patients with diabetes mellitus among those with and without chronic kidney disease:
 
        SELECT classification, COUNT(*) as total_patients,
-              ROUND(AVG(CASE WHEN dm = 'yes' THEN 1 ELSE 0 END)*100, 2) AS proportion_with_dm  
-       FROM Kidney_Disease
+              ROUND(AVG(CASE WHEN diabetes_mellitus = 'yes' THEN 1 ELSE 0 END)*100, 2) AS proportion_with_diabetes_mellitus  
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Average levels of blood glucose random among patients with and without chronic kidney disease:
 
-       SELECT classification, AVG(bgr) as avg_bgr
-       FROM Kidney_Disease
+       SELECT classification, AVG(blood_glucose_random) as average_blood_glucose_random
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Average levels of blood urea among patients with and without chronic kidney disease:
 
-       SELECT classification, AVG(bu) as avg_bu
-       FROM Kidney_Disease
+       SELECT classification, AVG(blood_urea) as average_blood_urea
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Average levels of serum creatinine among patients with and without chronic kidney disease:
 
-       SELECT classification, AVG(sc) as avg_sc
-       FROM Kidney_Disease
+       SELECT classification, AVG(serum_creatinine) as average_serum_creatinine
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Average levels of sodium among patients with and without chronic kidney disease:
 
-       SELECT classification, AVG(sod) as avg_sod
-       FROM Kidney_Disease
+       SELECT classification, AVG(sodium) as average_sodium
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Average levels of potassium among patients with and without chronic kidney disease:
 
-       SELECT classification, AVG(pot) as avg_pot
-       FROM Kidney_Disease
+       SELECT classification, AVG(potassium) as average_potassium
+       FROM KidneyDisease
        GROUP BY classification;
 
 --Average levels of hemoglobin among patients with and without chronic kidney disease:
 
-       SELECT classification, AVG(hemo) as avg_hemo
-       FROM Kidney_Disease
+       SELECT classification, AVG(hemoglobin) as average_hemoglobin
+       FROM KidneyDisease
        GROUP BY classification;
 
 ____________________________________________________________________________________________________________________________________________________________________
