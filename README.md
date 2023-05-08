@@ -7,110 +7,202 @@ Chronic kidney disease is a serious medical condition that affects a significant
 
 - Dataset link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
 
-Code abbreviations for patient attributes: 
+Table Name: KidneyDisease
 
-age = age
+Column Names and their values:
 
-bp = blood pressure
+id = patient id - (there are 400 total patients and values range from 0-399 and are arranged in ascending order to specify patient id)
 
-sg = specific gravity
+age = age of the patient
 
-al = albumin
+blood_pressure = patient's blood pressure level
 
-su = sugar
+specific_gravity = patient's specific gravity level
 
-rbc = red blood cells
+albumin = patient's albumin level
 
-pc = pus cell
+sugar = patient's sugar level
 
-pcc = pus cell clumps
+red_blood_cells = values are "normal" or "abnormal". "normal" refers to the patient having red blood cells in the normal range. "abnormal" refers to the patient having red blood cells in the abnormal range
 
-ba = bacteria
+pus_cell = values are "normal" or "abnormal". "normal" refers to the patient having red blood cells in the normal range. "abnormal" refers to the patient having red blood cells in the abnormal range
 
-bgr = blood glucose random
+pus_cell_clumps = values are "present" or "notpresent"
 
-bu = blood urea
+bacteria = values are "present" or "notpresent". "present" refers to patient having bacteria in the kidneys. "notpresent" refers to patient not having bacteria in the kidneys
 
-sc = serum creatinine
+blood_glucose_random = patient's random glucose testing level
 
-sod = sodium
+blood _urea = measures the amount of urea nitrogen in the blood
 
-pot = potassium
+serum_creatinine = patient’s creatinine levels
 
-hemo = hemoglobin
+sodium = patient’s sodium level
 
-pcv = packed cell volume
+potassium = patient’s potassium level
 
-wc = white blood cell count
+hemoglobin = patient’s hemoglobin level
 
-rc = red blood cell count
+packed_cell_volume = patient’s red blood cell mass
 
-htn = hypertension
+white_blood_cell_count = patient’s white blood cell count
 
-dm = diabetes mellitus
+red_blood_cell_count = patient’s red blood cell count
 
-cad = coronary artery disease
+hypertension = values are "yes" or "no". "yes" refers to the patient having hypertension (high blood pressure). "no" refers to the patient not having hypertension
 
-appet = appetite
+diabetes_mellitus = values are "yes" or "no". "yes" refers to the patient having diabetes mellitus. "no" refers to the patient not having diabetes mellitus
 
-pe = pedal edema
+coronary_artery_disease = values are "yes" or "no". "yes" refers to the patient having coronary artery disease. "no" refers to the patient not having coronary artery disease
 
-ane = anemia
+appetite = values are "good" or "bad". "good" refers to the patient having a healthy diet in relation to kidney disease. "bad" refers to the patient having an unhealthy diet in relation to kidney disease
 
-_______________________________________________________________________________________________________________________________________________________________________
+pedal_edema = values are "yes" or "no". "yes" refers to the patient having pedal edema. "no" refers to the patient not having pedal edema
 
-(Initial analysis of patient attributes)
+anemia = values are "yes" or "no". "yes" refers to the patient having anemia. "no" refers to the patient not having anemia
 
---Count the number of patients with hypertension:
+classification = refers to whether the patient has chronic kidney disease or not. Values are “ckd” or “notckd”. “ckd” refers to the patient having chronic kidney disease. “notckd” refers to the patient not having chronic kidney disease
 
-       SELECT COUNT(*) 
-       FROM Kidney_Disease 
-       WHERE htn = 'yes';
+____________________________________________________________________________________________________________________________________________________________________
 
---Calculate the average serum creatinine levels for patients with anemia:
+(CKD Analysis - These queries will help to analyze the trends in chronic kidney disease and provide insights into the common characteristics and conditions associated with the disease.)
 
-       SELECT AVG(sc)
-       FROM Kidney_Disease
-       WHERE ane = 'yes';
+1. Count the number of patients who have chronic kidney disease:
 
---Count the number of patients with albumin levels greater than 3:
+              SELECT COUNT(*) AS "Number of Patients with CKD" 
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
 
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE al > 3;
+2. Count the number of patients who do not have chronic kidney disease:
 
---Calculate the average age of patients with a blood glucose random value greater than 140:
+              SELECT COUNT(*) AS "Number of Patients without CKD" 
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
 
-       SELECT AVG(age)
-       FROM Kidney_Disease
-       WHERE bgr > 140;
+3. Calculate the average age of patients with chronic kidney disease:
 
---Count the number of patients with diabetes mellitus who have pedal edema:
+              SELECT AVG(age) AS "Average Age of Patients with CKD" 
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
 
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE dm = 'yes'
-       AND pe = 'yes';
+4. Calculate the average age of patients without chronic kidney disease:
 
---Calculate the average hemoglobin levels of patients with hypertension and anemia:
+              SELECT AVG(age) AS "Average Age of Patients without CKD"
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
 
-       SELECT AVG(hemo)
-       FROM Kidney_Disease
-       WHERE htn = 'yes'
-       AND ane = 'yes';
+5. Calculate the average blood pressure of patients with chronic kidney disease:
 
---Count the number of patients with a packed cell volume of less than 30:
+              SELECT AVG(blood_pressure) AS "Average Blood Pressure of Patients with CKD"
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
 
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE pcv < 30;
+6. Calculate the average blood pressure of patients without chronic kidney disease:
 
---Calculate the average white blood cell count for patients with pus cell clumps:
+              SELECT AVG(blood_pressure) AS "Average Blood Pressure of Patients without CKD"
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
 
-       SELECT AVG(wc)
-       FROM Kidney_Disease
-       WHERE pcc = 'present';
+7. Calculate the average serum creatinine level of patients with chronic kidney disease:
 
+              SELECT AVG(serum_creatinine) AS "Average Serum Creatinine of Patients with CKD"
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
+
+8. Calculate the average serum creatinine level of patients without chronic kidney disease:
+
+              SELECT AVG(serum_creatinine) AS "Average Serum Creatinine of Patients without CKD"
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
+
+9. Calculate the average blood urea level of patients with chronic kidney disease:
+
+              SELECT AVG(blood_urea) AS "Average Blood Urea of Patients with CKD"
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
+
+10. Calculate the average blood urea level of patients without chronic kidney disease:
+
+              SELECT AVG(blood_urea) AS "Average Blood Urea of Patients without CKD"
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
+
+11. Calculate the average white blood cell count of patients with chronic kidney disease:
+
+              SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of Patients with CKD"
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
+
+12. Calculate the average white blood cell count of patients without chronic kidney disease:
+
+              SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of Patients without CKD"
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
+
+13. Calculate the average red blood cell count of patients with chronic kidney disease:
+
+              SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of Patients with CKD"
+              FROM KidneyDisease
+              WHERE classification = 'ckd';
+
+14. Calculate the average red blood cell count of patients without chronic kidney disease:
+ 
+              SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of Patients without CKD"
+              FROM KidneyDisease
+              WHERE classification = 'notckd';
+
+15. Count the number of patients with hypertension who have chronic kidney disease:
+
+              SELECT COUNT(*) AS "Number of Patients with CKD who have Hypertension"
+              FROM KidneyDisease
+              WHERE classification = 'ckd' AND hypertension = 'yes';
+
+16. Calculate the percentage of patients with hypertension and chronic kidney disease:
+
+              SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
+              AS percentage_hypertension_ckd_patients
+              FROM KidneyDisease
+              WHERE hypertension = 'yes' AND classification = 'ckd';
+
+17. Count the number of patients with diabetes mellitus who have chronic kidney disease:
+
+              SELECT COUNT(*) AS "Number of Patients with CKD who have Diabetes Mellitus"
+              FROM KidneyDisease
+              WHERE classification = 'ckd' AND diabetes_mellitus = 'yes';
+
+18. Calculate the percentage of patients with diabetes mellitus and chronic kidney disease:
+
+              SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
+              AS percentage_diabets_mellitus_ckd_patients
+              FROM KidneyDisease
+              WHERE diabetes_mellitus = 'yes' AND classification = 'ckd';
+
+19. Count the number of patients with anemia who have chronic kidney disease:
+
+              SELECT COUNT(*) AS "Number of Patients with CKD who have Anemia"
+              FROM KidneyDisease
+              WHERE classification = 'ckd' AND anemia = 'yes';
+
+20. Calculate the percentage of patients with anemia and chronic kidney disease:
+
+              SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
+              AS percentage_anemia_ckd_patients
+              FROM KidneyDisease
+              WHERE anemia = 'yes' AND classification = 'ckd';
+
+21. Count the number of patients with pedal edema who have chronic kidney disease:
+
+              SELECT COUNT(*) AS "Number of Patients with CKD who have Pedal Edema"
+              FROM KidneyDisease
+              WHERE classification = 'ckd' AND pedal_edema = 'yes';
+
+22. Calculate the percentage of patients with pedal edema and chronic kidney disease:
+
+              SELECT COUNT(*) * 100.0 / (SELECT COUNT(*) FROM KidneyDisease WHERE classification = 'ckd') 
+              AS percentage_pedal_edema_ckd_patients
+              FROM KidneyDisease
+              WHERE pedal_edema = 'yes' AND classification = 'ckd';
+       
 _______________________________________________________________________________________________________________________________________________________________________
 
 (CKD Analysis - These queries will help to analyze the trends in chronic kidney disease and provide insights into the common characteristics and conditions associated with the disease.)
@@ -156,15 +248,12 @@ ________________________________________________________________________________
        SELECT COUNT(*)
        FROM Kidney_Disease
        WHERE classification = 'ckd' AND ane = 'yes';
-
---Count the number of patients with pedal edema and chronic kidney disease:
-
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd' AND pe = 'yes';
+       
 
 _______________________________________________________________________________________________________________________________________________________________________
+
 (Advanced Queries for Statistical Analysis)
+
 
 --Number of patients with chronic kidney disease and without chronic kidney disease:
 
