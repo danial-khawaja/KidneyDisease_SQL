@@ -296,7 +296,7 @@ Data Cleaning:
 
 The original Excel file was imported into SQL server and missing values were allowed to remain NULL in order to maintain the accuracy of the statistics from this specific clinical dataset. The inconsistent data types were converted to their respective data types. The column 'classification' was transformed into a binary variable (bit) where 1 represents ckd and 0 represents notckd.
 
-Data Analysis - The following statistics were identified in the data:
+Data Analysis:
 
 Patient Demographics - Out of the 398 patients, 248 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
 
