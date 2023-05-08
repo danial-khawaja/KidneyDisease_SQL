@@ -310,6 +310,8 @@ Hemoglobin & Anemia - The average hemoglobin level of patients with CKD was 9.6 
 
 Pedal Edema - 141 patients out of 248 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
+____________________________________________________________________________________________________________________________________________________________________
+
 Insights:
 
 This data analysis has identified several important trends in the characteristics of patients with chronic kidney disease (CKD). Patients with CKD tend to be older, with a statistically significant difference of 6 years compared to those without CKD. This highlights the importance of regular monitoring of kidney function in elderly patients, especially those with known risk factors for CKD.
