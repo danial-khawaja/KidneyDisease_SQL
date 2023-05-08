@@ -216,54 +216,8 @@ ________________________________________________________________________________
               WHERE pedal_edema = 'yes' AND classification = 'ckd';
        
 _______________________________________________________________________________________________________________________________________________________________________
-
-(CKD Analysis - These queries will help to analyze the trends in chronic kidney disease and provide insights into the common characteristics and conditions associated with the disease.)
-
---Count the number of patients with chronic kidney disease:
-
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd';
-
---Calculate the average age of patients with chronic kidney disease:
-
-       SELECT AVG(age)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd';
-
---Calculate the average serum creatinine level of patients with chronic kidney disease:
-
-       SELECT AVG(sc)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd';
-
---Count the number of patients with hypertension and chronic kidney disease:
-
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd' AND htn = 'yes';
-
---Count the number of patients with diabetes mellitus and chronic kidney disease:
-
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd' AND dm = 'yes';
-
---Calculate the average hemoglobin level of patients with chronic kidney disease:
-
-       SELECT AVG(hemo)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd';
-
---Count the number of patients with anemia and chronic kidney disease:
-
-       SELECT COUNT(*)
-       FROM Kidney_Disease
-       WHERE classification = 'ckd' AND ane = 'yes';
        
-
-_______________________________________________________________________________________________________________________________________________________________________
-
+       
 (Advanced Queries for Statistical Analysis)
 
 
