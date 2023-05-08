@@ -290,13 +290,13 @@ Dataset Report: Summary & Insights
 
 Data Exploration:
 
-The dataset consists of 25 columns (patient attributes) and 400 rows (# of patients) which describe the medical conditions of patients with chronic kidney disease. The columns include age, blood pressure, specific gravity, albumin, sugar, red blood cells, pus cell, pus cell clumps, bacteria, blood glucose random, blood urea, serum creatinine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, red blood cell count, hypertension, diabetes mellitus, coronary artery disease, appetite, pedal edema, anemia, and classification (ckd or notckd).
+The dataset consists of 25 columns (patient attributes) and 398 rows (# of patients) which describe the medical conditions of patients with chronic kidney disease. The columns include age, blood pressure, specific gravity, albumin, sugar, red blood cells, pus cell, pus cell clumps, bacteria, blood glucose random, blood urea, serum creatinine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, red blood cell count, hypertension, diabetes mellitus, coronary artery disease, appetite, pedal edema, anemia, and classification - (ckd or notckd).
 
 Data Cleaning:
 
 The original Excel file was imported into SQL server and missing values were allowed to remain NULL in order to maintain the accuracy of the statistics from this specific clinical dataset. The inconsistent data types were converted to their respective data types. The column 'classification' was transformed into a binary variable (bit) where 1 represents ckd and 0 represents notckd.
 
-Data Analysis - The following trends were identified in the data:
+Data Analysis - The following statistics were identified in the data:
 
 Patient Demographics: Out of the 398 patients, 248 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
 
