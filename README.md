@@ -302,7 +302,7 @@ Patient Demographics: Out of the 398 patients, 248 were diagnosed with chronic k
 
 Serum Creatinine: The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
 
-Hypertension: 183 patients out of 248 with CKD had hypertension (73.2%), while only 15 patients out of 150 without CKD had hypertension (10%).
+Hypertension: 145 patients out of 248 with CKD had hypertension (58.47%), while 0 patients out of 150 without CKD had hypertension (0%).
 
 Diabetes Mellitus: 108 patients out of 248 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
 
