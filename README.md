@@ -33,7 +33,7 @@ bacteria = values are "present" or "notpresent". "present" refers to patient hav
 
 blood_glucose_random = patient's random glucose testing level
 
-blood _urea = measures the amount of urea nitrogen in the blood
+blood_urea = measures the amount of urea nitrogen in the blood
 
 serum_creatinine = patient’s creatinine levels
 
