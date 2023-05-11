@@ -287,7 +287,6 @@ ________________________________________________________________________________
 
 Dataset Report: Summary & Insights
 
-
 Data Exploration:
 
 The dataset consists of 25 columns (patient attributes) and 398 rows (# of patients) which describe the medical conditions of patients with chronic kidney disease. The columns include age, blood pressure, specific gravity, albumin, sugar, red blood cells, pus cell, pus cell clumps, bacteria, blood glucose random, blood urea, serum creatinine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, red blood cell count, hypertension, diabetes mellitus, coronary artery disease, appetite, pedal edema, anemia, and classification - (ckd or notckd).
@@ -295,6 +294,60 @@ The dataset consists of 25 columns (patient attributes) and 398 rows (# of patie
 Data Cleaning:
 
 The original Excel file was imported into SQL server and missing values were allowed to remain NULL in order to maintain the accuracy of the statistics from this specific clinical dataset. The inconsistent data types were converted to their respective data types. The column 'classification' was transformed into a binary variable (bit) where 1 represents ckd and 0 represents notckd.
+
+____________________________________________________________________________________________________________________________________________________________________________
+
+Output Statistics:
+
+Number of CKD Patients = 248
+
+Number of Non-CKD Patients = 150
+
+Average Age of CKD Patients = 54
+
+Average Age of Non-CKD Patients = 46
+
+Average Blood Pressure of CKD Patients = 79
+
+Average Blood Pressure of Non-CKD Patients = 71
+
+Average Serum Creatinine of CKD Patients = 4.43
+
+Average Serum Creatinine of Non-CKD Patients = 0.87
+
+Average Hemoglobin of CKD Patients = 10.6
+
+Average Hemoglobin of Non-CKD Patients = 15.2
+
+Average Blood Urea of CKD Patients = 72.7
+
+Average Blood Urea of Non-CKD Patients = 32.8
+
+Average White Blood Cell Count of CKD Patients = 9081
+
+Average White Blood Cell Count of Non-CKD Patients = 7705
+
+Average Red Blood Cell Count of CKD Patients = 3.9
+
+Average Red Blood Cell Count of Non-CKD Patients = 5.4
+
+Number of CKD Patients with Hypertension = 145
+
+Percentage of CKD Patients with Hypertension = 58.5%
+
+Number of CKD Patients with Diabetes Mellitus = 133
+
+Percentage of CKD Patients with Diabetes Mellitus = 53.6%
+
+Number of CKD Patients with Anemia = 59
+
+Percentage of CKD Patients with Anemia = 23.8%
+
+Number of CKD Patients with Pedal Edema = 76
+
+Percentage of CKD Patients with Pedal Edema = 30.6%
+
+
 
 Data Analysis:
 
@@ -339,29 +392,3 @@ Encourage education and awareness campaigns to increase knowledge and understand
 Conclusion: 
 
 Overall, this data analysis highlights the significant impact of age, hypertension, diabetes mellitus, and anemia on the development and progression of CKD. Early detection and management of these risk factors, coupled with regular monitoring of kidney function, can help to prevent or slow down the progression of CKD. Through concerted efforts from healthcare providers, researchers, and policy makers, we can work together to improve the lives of those affected by CKD.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
