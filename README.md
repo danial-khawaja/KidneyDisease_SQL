@@ -69,103 +69,103 @@ ________________________________________________________________________________
 
 1. Count the number of patients who have chronic kidney disease:
 
-              SELECT COUNT(*) AS "Number of Patients with CKD" 
+              SELECT COUNT(*) AS "Number of CKD Patients" 
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 2. Count the number of patients who do not have chronic kidney disease:
 
-              SELECT COUNT(*) AS "Number of Patients without CKD" 
+              SELECT COUNT(*) AS "Number of Non-CKD Patients" 
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
 3. Calculate the average age of patients with chronic kidney disease:
 
-              SELECT AVG(age) AS "Average Age of Patients with CKD" 
+              SELECT AVG(age) AS "Average Age of CKD Patients" 
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 4. Calculate the average age of patients without chronic kidney disease:
 
-              SELECT AVG(age) AS "Average Age of Patients without CKD"
+              SELECT AVG(age) AS "Average Age of Non-CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
 5. Calculate the average blood pressure of patients with chronic kidney disease:
 
-              SELECT AVG(blood_pressure) AS "Average Blood Pressure of Patients with CKD"
+              SELECT AVG(blood_pressure) AS "Average Blood Pressure of CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 6. Calculate the average blood pressure of patients without chronic kidney disease:
 
-              SELECT AVG(blood_pressure) AS "Average Blood Pressure of Patients without CKD"
+              SELECT AVG(blood_pressure) AS "Average Blood Pressure of Non-CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
 7. Calculate the average serum creatinine level of patients with chronic kidney disease:
 
-              SELECT AVG(serum_creatinine) AS "Average Serum Creatinine of Patients with CKD"
+              SELECT AVG(serum_creatinine) AS "Average Serum Creatinine of CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 8. Calculate the average serum creatinine level of patients without chronic kidney disease:
 
-              SELECT AVG(serum_creatinine) AS "Average Serum Creatinine of Patients without CKD"
+              SELECT AVG(serum_creatinine) AS "Average Serum Creatinine of Non-CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'notckd';
              
 9. Calculate the average hemoglobin level of patients with chronic kidney disease:
 
-              SELECT AVG(hemoglobin) AS "Average Hemoglobin of Patients with CKD"
+              SELECT AVG(hemoglobin) AS "Average Hemoglobin of CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 10. Calculate the average hemoglobin level of patients without chronic kidney disease:
 
-              SELECT AVG(hemoglobin) AS "Average Hemoglobin of Patients without CKD"
+              SELECT AVG(hemoglobin) AS "Average Hemoglobin of Non-CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
 11. Calculate the average blood urea level of patients with chronic kidney disease:
 
-              SELECT AVG(blood_urea) AS "Average Blood Urea of Patients with CKD"
+              SELECT AVG(blood_urea) AS "Average Blood Urea of CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 12. Calculate the average blood urea level of patients without chronic kidney disease:
 
-              SELECT AVG(blood_urea) AS "Average Blood Urea of Patients without CKD"
+              SELECT AVG(blood_urea) AS "Average Blood Urea of Non-CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
 13. Calculate the average white blood cell count of patients with chronic kidney disease:
 
-              SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of Patients with CKD"
+              SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 14. Calculate the average white blood cell count of patients without chronic kidney disease:
 
-              SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of Patients without CKD"
+              SELECT AVG(white_blood_cell_count) AS "Average White Blood Cell Count of Non-CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
 15. Calculate the average red blood cell count of patients with chronic kidney disease:
 
-              SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of Patients with CKD"
+              SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'ckd';
 
 16. Calculate the average red blood cell count of patients without chronic kidney disease:
  
-              SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of Patients without CKD"
+              SELECT AVG(red_blood_cell_count) AS "Average Red Blood Cell Count of Non-CKD Patients"
               FROM KidneyDisease
               WHERE classification = 'notckd';
 
 17. Count the number of patients with hypertension who have chronic kidney disease:
 
-              SELECT COUNT(*) AS "Number of Patients with CKD who have Hypertension"
+              SELECT COUNT(*) AS "Number of CKD Patients with Hypertension"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND hypertension = 'yes';
 
@@ -178,7 +178,7 @@ ________________________________________________________________________________
 
 19. Count the number of patients with diabetes mellitus who have chronic kidney disease:
 
-              SELECT COUNT(*) AS "Number of Patients with CKD who have Diabetes Mellitus"
+              SELECT COUNT(*) AS "Number of CKD Patients with Diabetes Mellitus"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND diabetes_mellitus = 'yes';
 
@@ -191,7 +191,7 @@ ________________________________________________________________________________
 
 21. Count the number of patients with anemia who have chronic kidney disease:
 
-              SELECT COUNT(*) AS "Number of Patients with CKD who have Anemia"
+              SELECT COUNT(*) AS "Number of CKD Patients with Anemia"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND anemia = 'yes';
 
@@ -204,7 +204,7 @@ ________________________________________________________________________________
 
 23. Count the number of patients with pedal edema who have chronic kidney disease:
 
-              SELECT COUNT(*) AS "Number of Patients with CKD who have Pedal Edema"
+              SELECT COUNT(*) AS "Number of CKD Patients with Pedal Edema"
               FROM KidneyDisease
               WHERE classification = 'ckd' AND pedal_edema = 'yes';
 
