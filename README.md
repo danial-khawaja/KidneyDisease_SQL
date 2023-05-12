@@ -7,7 +7,7 @@ Chronic kidney disease (CKD) is a serious medical condition that affects a signi
 
 Dataset Description:
 
-This table contains 398 rows of patient data which contains various blood test levels which physicians assess to monitor renal function (eg. blood pressure, , and prescense of  was taken over a 2-month period in India with several  features ( eg, red blood cell count, white blood cell count, etc). The target is the 'classification', which is either 'ckd' or 'notckd' - ckd=chronic kidney disease. There are 400 rows
+This table contains 398 rows of patient data and contains various blood test levels which physicians assess to monitor renal function (eg. blood pressure, , and prescense of  was taken over a 2-month period in India with several  features ( eg, red blood cell count, white blood cell count, etc). The target is the 'classification', which is either 'ckd' or 'notckd' - ckd=chronic kidney disease. There are 400 rows
 
 - Dataset link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
 
