@@ -1,15 +1,15 @@
-# Chronic Kidney Disease Data Analysis
+# Exploring Chronic Kidney Disease through Statistical Analysis
 
 
 Objective:
 
-Chronic kidney disease (CKD) is a serious medical condition that affects a significant proportion of the population. I will analyze the clincal data to identify trends, statistics, and comorbidties in CKD patients. My findings can be used to improve early diagnosis and treatment of chronic kidney disease, and to develop preventive measures to reduce its incidence.
+Chronic kidney disease (CKD) is a serious medical condition that affects a significant proportion of the population. I will analyze the clincal data to identify trends and statistics in CKD patients. My findings can be used to improve early diagnosis and treatment of chronic kidney disease, and to develop preventive measures to reduce its incidence.
+
+This table contains 398 rows of patient data and includes information on patient attributes, blood test levels, and comorbidities associated with chronic kidney disease. The table has two values in the classification column: "ckd" and "notckd". The target of this analysis is to highlight the differences in patient attributes in relation to patients that have CKD and Non-CKD patients. This will give insight into how chronic kidney disease affects our metabolic numbers and what are the most common comorbidities that increase the progression of CKD.
 
 Dataset Description:
 
-This table contains 398 rows of patient data and contains various blood test levels which physicians assess to monitor renal function (eg. blood pressure, , and prescense of  was taken over a 2-month period in India with several  features ( eg, red blood cell count, white blood cell count, etc). The target is the 'classification', which is either 'ckd' or 'notckd' - ckd=chronic kidney disease. There are 400 rows
-
-- Dataset link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
+- Link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
 
 Table Name: KidneyDisease
 
@@ -289,17 +289,8 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________________________________________________________________________________
 
-Dataset Report: Summary & Insights
+# Data Report: CKD Risk Factors
 
-Data Exploration:
-
-The dataset consists of 25 columns (patient attributes) and 398 rows (# of patients) which describe the medical conditions of patients with chronic kidney disease. The columns include age, blood pressure, specific gravity, albumin, sugar, red blood cells, pus cell, pus cell clumps, bacteria, blood glucose random, blood urea, serum creatinine, sodium, potassium, hemoglobin, packed cell volume, white blood cell count, red blood cell count, hypertension, diabetes mellitus, coronary artery disease, appetite, pedal edema, anemia, and classification - (ckd or notckd).
-
-Data Cleaning:
-
-The original Excel file was imported into SQL server and missing values were allowed to remain NULL in order to maintain the accuracy of the statistics from this specific clinical dataset. The inconsistent data types were converted to their respective data types. The column 'classification' was transformed into a binary variable (bit) where 1 represents ckd and 0 represents notckd.
-
-____________________________________________________________________________________________________________________________________________________________________________
 
 Output Statistics:
 
