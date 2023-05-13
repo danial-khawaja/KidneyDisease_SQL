@@ -348,15 +348,15 @@ Data Analysis:
 
 Patient Demographics - Out of the 398 patients, 248 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
 
-Serum Creatinine - The average serum creatinine level of patients with CKD was 3.07 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
+Serum Creatinine - The average serum creatinine level of patients with CKD was 4.43 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
 
-Hypertension - 145 patients out of 248 with CKD had hypertension (58.47%), while 0 patients out of 150 without CKD had hypertension (0%).
+Hypertension - 145 patients out of 248 with CKD had hypertension (58.5%), while 0 patients out of 150 without CKD had hypertension (0%).
 
-Diabetes Mellitus - 108 patients out of 248 with CKD had diabetes mellitus (43.2%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
+Diabetes Mellitus - 133 patients out of 248 with CKD had diabetes mellitus (53.6%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
 
-Hemoglobin & Anemia - The average hemoglobin level of patients with CKD was 9.6 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 248 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
+Hemoglobin & Anemia - The average hemoglobin level of patients with CKD was 10.7 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 248 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
 
-Pedal Edema - 141 patients out of 248 with ckd had pedal edema (56.4%), while only 15 patients out of 150 without ckd had pedal edema (10%).
+Pedal Edema - 141 patients out of 248 with ckd had pedal edema (30.6%), while only 15 patients out of 150 without ckd had pedal edema (10%).
 
 ____________________________________________________________________________________________________________________________________________________________________
 
