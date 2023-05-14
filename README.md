@@ -215,17 +215,17 @@ Percentage of CKD Patients with Pedal Edema = 30.6%
 
 Data Analysis:
 
-Patient Demographics - Out of the 398 patients, 248 were diagnosed with chronic kidney disease (ckd) while 150 patients did not have ckd. The average age of patients with CKD was 54 years, with a minimum age of 2 and a maximum age of 90 years.
+Patient Demographics - Out of the 398 patients, 248 were diagnosed with CKD while 150 patients did not have CKD. The average age of CKD patients was 54 years, while the average age of Non-CKD patients was 46.
 
-Serum Creatinine - The average serum creatinine level of patients with CKD was 4.43 mg/dL, with a minimum level of 0.5 mg/dL and a maximum level of 9.6 mg/dL.
+Serum Creatinine - The average serum creatinine level of patients with CKD was 4.43 mg/dL, while the average serum creatinine level of Non-CKD patients was: 0.87 mg/dL.
 
-Hypertension - 145 patients out of 248 with CKD had hypertension (58.5%), while 0 patients out of 150 without CKD had hypertension (0%).
+Hypertension - The average blood pressure of CKD patients was 79, while the average blood pressure of Non-CKD patients was 71. 145 patients out of 248 with CKD had hypertension (58.5%).
 
-Diabetes Mellitus - 133 patients out of 248 with CKD had diabetes mellitus (53.6%), while only 15 patients out of 150 without CKD had diabetes mellitus (10%).
+Diabetes Mellitus - The average blood glucose random level of CKD patients was 175, while the average Blood Glucose Random level of Non-CKD patients was 107. 133 patients out of 248 with CKD had diabetes mellitus (53.6%)
 
-Hemoglobin & Anemia - The average hemoglobin level of patients with CKD was 10.7 g/dL, with a minimum level of 3.1 g/dL and a maximum level of 17.8 g/dL. 179 patients out of 248 with ckd had anemia (71.6%), while only 41 patients out of 150 without ckd had anemia (27.3%).
+Hemoglobin & Anemia - The average hemoglobin level of CKD patients was 10.6 g/dL, while the average hemoglobin level of Non-CKD patients was 15.2. 59 patients out of 248 with CKD had anemia (23.8%).
 
-Pedal Edema - 141 patients out of 248 with ckd had pedal edema (30.6%), while only 15 patients out of 150 without ckd had pedal edema (10%).
+Pedal Edema - 76 patients out of 248 with CKD had pedal edema (30.6%).
 
 ____________________________________________________________________________________________________________________________________________________________________
 
