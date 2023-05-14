@@ -150,7 +150,7 @@ SQL Queries to identify the totals, averages, and percentages of risk factors an
 
 ____________________________________________________________________________________________________________________________________________________________________
 
-# Data Report: CKD Risk Factors
+# Data Report: CKD vs. Non-CKD Patients
 
 
 Output Statistics:
