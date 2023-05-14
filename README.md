@@ -225,8 +225,6 @@ Diabetes Mellitus - The average blood glucose random level of CKD patients was 1
 
 Hemoglobin & Anemia - The average hemoglobin level of CKD patients was 10.6 g/dL, while the average hemoglobin level of Non-CKD patients was 15.2. 59 patients out of 248 with CKD had anemia (23.8%).
 
-Pedal Edema - 76 patients out of 248 with CKD had pedal edema (30.6%).
-
 ____________________________________________________________________________________________________________________________________________________________________
 
 Insights:
