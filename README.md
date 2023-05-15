@@ -1,4 +1,4 @@
-# Exploring Chronic Kidney Disease through Statistical Analysis
+# Exploring Chronic Kidney Disease Statistics with SQL
 
 
 Objective:
@@ -153,6 +153,7 @@ ________________________________________________________________________________
 # Data Report: CKD vs. Non-CKD Patients
 
 
+### Output Statistics:
 
 Number of CKD Patients = 248
 
