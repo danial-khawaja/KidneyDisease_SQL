@@ -11,9 +11,9 @@ Dataset:
 
 - Link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
 
-Table Name: KidneyDisease
+### Table Legend & Column Names
 
-Column Names and their values:
+Table Name: KidneyDisease
 
 id = patient id - (there are 398 total patients and values range from 0-397 and are arranged in ascending order to specify patient id)
 
