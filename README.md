@@ -7,7 +7,7 @@ Chronic kidney disease (CKD) is a serious medical condition that affects a signi
 
 This table contains 398 rows of patient data and includes information on patient attributes, blood test levels, and comorbidities associated with chronic kidney disease. The table has two values in the classification column: "ckd" and "notckd". The target of this analysis is to highlight the differences in patient attributes in relation to patients that have CKD and Non-CKD patients. This will give insight into how chronic kidney disease affects our metabolic numbers and what are the most common comorbidities that increase the progression of CKD.
 
-Dataset Description:
+Dataset:
 
 - Link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
 
@@ -69,7 +69,7 @@ classification = refers to whether the patient has chronic kidney disease or not
        
 _______________________________________________________________________________________________________________________________________________________________________
 
-SQL Queries to identify the totals, averages, and percentages of risk factors and comorbidities of CKD
+### SQL Queries to identify totals, averages, and percentages of CKD risk factors
 
 --Number of patients with chronic kidney disease and without chronic kidney disease:
 
@@ -153,7 +153,6 @@ ________________________________________________________________________________
 # Data Report: CKD vs. Non-CKD Patients
 
 
-Output Statistics:
 
 Number of CKD Patients = 248
 
@@ -213,7 +212,7 @@ Percentage of CKD Patients with Pedal Edema = 30.6%
 
 
 
-Data Analysis:
+### Data Analysis:
 
 Patient Demographics - Out of the 398 patients, 248 were diagnosed with CKD while 150 patients did not have CKD. The average age of CKD patients was 54 years, while the average age of Non-CKD patients was 46.
 
@@ -227,7 +226,7 @@ Hemoglobin & Anemia - The average hemoglobin level of CKD patients was 10.6 g/dL
 
 ____________________________________________________________________________________________________________________________________________________________________
 
-Insights:
+### Insights:
 
 This data analysis has identified several important trends in the characteristics of patients with chronic kidney disease (CKD). Patients with CKD tend to be older, with a statistically significant difference of 6 years compared to those without CKD. This highlights the importance of regular monitoring of kidney function in elderly patients, especially those with known risk factors for CKD.
 
@@ -237,7 +236,7 @@ Furthermore, the data analysis revealed that patients with CKD have lower levels
 
 Finally, this analysis highlights the importance of regular monitoring of symptoms and comorbidities in patients with CKD. Pedal edema was the most commonly reported symptom, while hypertension, diabetes mellitus, and coronary artery disease were the most commonly reported comorbidities. Healthcare providers should routinely assess and manage these conditions to improve patient outcomes.
 
-Action Items:
+### Action Items:
 
 Healthcare Providers - Regular monitoring of kidney function and early detection and management of risk factors for CKD in patients, especially in those with hypertension and diabetes mellitus.
 Awareness and management of anemia in CKD patients, which is associated with lower levels of hemoglobin, packed cell volume, and red blood cell count.
@@ -251,6 +250,6 @@ Policy Makers - Develop policies and guidelines to improve the prevention, detec
 Increase access to healthcare services and resources, especially for underserved communities who are at a higher risk of CKD.
 Encourage education and awareness campaigns to increase knowledge and understanding of the risk factors and prevention of CKD.
 
-Conclusion: 
+### Conclusion: 
 
 Overall, this data analysis highlights the significant impact of age, hypertension, diabetes mellitus, and anemia on the development and progression of CKD. Early detection and management of these risk factors, coupled with regular monitoring of kidney function, can help to prevent or slow down the progression of CKD. Through concerted efforts from healthcare providers, researchers, and policy makers, we can work together to improve the lives of those affected by CKD.
