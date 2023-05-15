@@ -214,15 +214,15 @@ Percentage of CKD Patients with Pedal Edema = 30.6%
 
 ### Data Analysis:
 
-Patient Demographics - Out of the 398 patients, 248 were diagnosed with CKD while 150 patients did not have CKD. The average age of CKD patients was 54 years, while the average age of Non-CKD patients was 46.
+- Patient Demographics - Out of the 398 patients, 248 were diagnosed with CKD while 150 patients did not have CKD. The average age of CKD patients was 54 years, while the average age of Non-CKD patients was 46.
 
-Serum Creatinine - The average serum creatinine level of patients with CKD was 4.43 mg/dL, while the average serum creatinine level of Non-CKD patients was: 0.87 mg/dL.
+- Serum Creatinine - The average serum creatinine level of patients with CKD was 4.43 mg/dL, while the average serum creatinine level of Non-CKD patients was: 0.87 mg/dL.
 
-Hypertension - The average blood pressure of CKD patients was 79, while the average blood pressure of Non-CKD patients was 71. 145 patients out of 248 with CKD had hypertension (58.5%).
+- Hypertension - The average blood pressure of CKD patients was 79, while the average blood pressure of Non-CKD patients was 71. 145 patients out of 248 with CKD had hypertension (58.5%).
 
-Diabetes Mellitus - The average blood glucose random level of CKD patients was 175, while the average Blood Glucose Random level of Non-CKD patients was 107. 133 patients out of 248 with CKD had diabetes mellitus (53.6%)
+- Diabetes Mellitus - The average blood glucose random level of CKD patients was 175, while the average Blood Glucose Random level of Non-CKD patients was 107. 133 patients out of 248 with CKD had diabetes mellitus (53.6%)
 
-Hemoglobin & Anemia - The average hemoglobin level of CKD patients was 10.6 g/dL, while the average hemoglobin level of Non-CKD patients was 15.2. 59 patients out of 248 with CKD had anemia (23.8%).
+- Hemoglobin & Anemia - The average hemoglobin level of CKD patients was 10.6 g/dL, while the average hemoglobin level of Non-CKD patients was 15.2. 59 patients out of 248 with CKD had anemia (23.8%).
 
 ____________________________________________________________________________________________________________________________________________________________________
 
@@ -238,18 +238,30 @@ Finally, this analysis highlights the importance of regular monitoring of sympto
 
 ### Action Items:
 
-Healthcare Providers - Regular monitoring of kidney function and early detection and management of risk factors for CKD in patients, especially in those with hypertension and diabetes mellitus.
-Awareness and management of anemia in CKD patients, which is associated with lower levels of hemoglobin, packed cell volume, and red blood cell count.
-Encourage lifestyle changes, such as reducing salt and sugar intake, maintaining a healthy weight, and engaging in regular physical activity to reduce the risk of CKD.
+Healthcare Providers
 
-Researchers - Further research to understand the complex relationships between age, hypertension, diabetes mellitus, and anemia and their contribution to the development and progression of CKD.
-Conduct studies to evaluate the effectiveness of different interventions in managing anemia in CKD patients.
-Investigate the potential of biomarkers, such as serum creatinine and blood urea, in predicting and monitoring CKD.
+- Monitor Kidney Function: for early detection and management of risk factors for CKD in patients, especially in those with hypertension, diabetes, and cardiovascular disease
 
-Policy Makers - Develop policies and guidelines to improve the prevention, detection, and management of CKD.
-Increase access to healthcare services and resources, especially for underserved communities who are at a higher risk of CKD.
-Encourage education and awareness campaigns to increase knowledge and understanding of the risk factors and prevention of CKD.
+- Order Routine Blood Tests: and check blood pressure for patients to evaluate medical attributes associated with kidney function including creatinine, high blood pressure, hemoglobin, sodium & potassium levels
+ 
+- Encourage Lifestyle Changes: including maintaining a healthy weight and diet as well as engaging in regular physical activity to reduce the risk of CKD
+
+Researchers
+
+- Conduct Clinical Trials: for further research to understand the complex interconnected relationships between age, hypertension, diabetes, and cardiovascular disease and their contribution to the progression of CKD
+ 
+- Investigate Genetics: and the potential role of racial and genetic differences in the development and progression of CKD including studying unique characteristics of CKD in different racial groups and ensuring medical equality in care for all patients
+
+- Improve Data Collection / Analysis: Clinical Data Analysts can work on standardizing protocols for data collection, using advanced statistical methods, and using electronic health records to track patient outcomes over time
+
+Policy Makers 
+
+- Promote Innovative Payment Models: which incentivize quality care and improve patient outcomes, such as value-based payment models
+
+- Address Social Determinants of Health: that contribute to CKD disparities, such as poverty and lack of access to healthcare in addition to developing plans that ensure equitable access to quality care for all CKD patients, regardless of race, ethnicity, or socioeconomic status
+
+- Launch Awareness Campaigns: to educate high-risk populations of the factors that contribute to CKD and how they can take practical steps to prevent its development
 
 ### Conclusion: 
 
-Overall, this data analysis highlights the significant impact of age, hypertension, diabetes mellitus, and anemia on the development and progression of CKD. Early detection and management of these risk factors, coupled with regular monitoring of kidney function, can help to prevent or slow down the progression of CKD. Through concerted efforts from healthcare providers, researchers, and policy makers, we can work together to improve the lives of those affected by CKD.
+Overall, this data analysis highlights the significant impact of the risk factors and comorbidities on the development and progression of CKD. Early detection and management of these risk factors, coupled with regular monitoring of kidney function, can help to prevent or slow down its progression. Through concerted efforts from healthcare providers, researchers, and policy makers, we can work together to improve the lives of those affected by CKD.
