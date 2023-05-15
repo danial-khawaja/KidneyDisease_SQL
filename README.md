@@ -201,7 +201,7 @@ Percentage of CKD Patients with Diabetes Mellitus = 53.6%
 
 Number of CKD Patients with Coronary Artery Disease = 34
 
-Percentage of CKD Patients with Coronary Artery Diseas = 13.7%
+Percentage of CKD Patients with Coronary Artery Disease = 13.7%
 
 Number of CKD Patients with Anemia = 59
 
