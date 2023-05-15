@@ -3,9 +3,9 @@
 
 Objective:
 
-Chronic kidney disease (CKD) is a serious medical condition that affects a significant proportion of the population. I will analyze the clincal data to identify trends and statistics in CKD patients. My findings can be used to improve early diagnosis and treatment of chronic kidney disease, and to develop preventive measures to reduce its incidence.
+Chronic kidney disease (CKD) is a serious medical condition that affects a significant proportion of the population. The dataset was compiled over a 2-month period in India for patients in one hospital. I will analyze the clincal data to identify trends and statistics in CKD patients. My findings can be used to improve early diagnosis and treatment of chronic kidney disease, and to develop preventive measures to reduce its incidence.
 
-This table contains 398 rows of patient data and includes information on patient attributes, blood test levels, and comorbidities associated with chronic kidney disease. The table has two values in the classification column: "ckd" and "notckd". The target of this analysis is to highlight the differences in patient attributes in relation to patients that have CKD and Non-CKD patients. This will give insight into how chronic kidney disease affects our metabolic numbers and what are the most common comorbidities that increase the progression of CKD.
+This table contains 398 rows of patients and includes information on medical attributes such as blood test levels, and comorbidities associated with chronic kidney disease. The table has two values in the classification column: "ckd" and "notckd". The target is to highlight the differences in medical attributes in relation to patients that have CKD and Non-CKD patients. This will give insight into how chronic kidney disease affects our metabolic numbers and what are the most common comorbidities that increase the progression of CKD.
 
 Dataset:
 
