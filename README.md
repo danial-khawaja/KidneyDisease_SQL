@@ -69,83 +69,81 @@ classification = refers to whether the patient has chronic kidney disease or not
        
 _______________________________________________________________________________________________________________________________________________________________________
 
-### SQL Queries to identify totals, averages, and percentages of CKD risk factors
+## SQL Queries to identify totals, averages, and percentages of CKD risk factors
 
---Number of patients with chronic kidney disease and without chronic kidney disease:
 
-       SELECT classification, COUNT(*) as total_patients
-       FROM KidneyDisease
-       GROUP BY classification;
+### Total Patients Table: Count the toal number of patients followed by total patients with each comorbidity / complication grouped by their classification (CKD or notCKD)
 
---Average age of patients with chronic kidney disease and without chronic kidney disease:
+SELECT classification,
+	COUNT(*) AS "Total Patients",       
+	COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) AS "Hypertension Count",      
+	COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) AS "Diabetes Count",      
+	COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) AS "CoronaryArteryDisease Count",      
+	COUNT(CASE WHEN anemia = 'yes' THEN 1 END) AS "Anemia Count",     
+	COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) AS "Edema Count"       
+FROM KidneyDisease
+GROUP BY classification;
 
-       SELECT classification, AVG(age) as average_age
-       FROM KidneyDisease
-       GROUP BY classification;
-       
---Average levels of serum creatinine among patients with and without chronic kidney disease:
+### We can see that in this dataset, non-CKD patients do not have any of the associated comorbidities / complications that CKD patients have 
 
-      SELECT classification, AVG(serum_creatinine) as average_serum_creatinine
-      FROM KidneyDisease
-      GROUP BY classification;
-      
---Average blood pressure among patients with and without chronic kidney disease:
 
-      SELECT classification, AVG(blood_pressure) as average_blood_pressure
-      FROM KidneyDisease
-      GROUP BY classification;
+### Percentages Table: Calculate the percentage of CKD patients grouped by each comorbidity / complication
 
---Average levels of blood glucose random among patients with and without chronic kidney disease:
+SELECT
+  COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension CKD Patients",  
+  COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Diabetes CKD Patients",  
+  COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage CoronaryArteryDisease CKD Patients",  
+  COUNT(CASE WHEN anemia = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage Anemia CKD Patients",  
+  COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage Edema CKD Patients"  
+FROM KidneyDisease
+WHERE classification = 'ckd';
 
-       SELECT classification, AVG(blood_glucose_random) as average_blood_glucose_random
-       FROM KidneyDisease
-       GROUP BY classification;
-       
---Average levels of hemoglobin among patients with and without chronic kidney disease:
+### Comorbidities Combinations Table:
 
-       SELECT classification, AVG(hemoglobin) as average_hemoglobin
-       FROM KidneyDisease
-       GROUP BY classification;       
+SELECT
+    SUM(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' THEN 1 ELSE 0 END) AS "Hypertension & Diabetes",    
+    SUM(CASE WHEN hypertension = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "Hypertension & CoronaryArteryDisease",   
+    SUM(CASE WHEN diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "Diabetes & CoronaryArteryDisease",  
+    SUM(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "All: Hypertension, Diabetes, CoronaryArteryDisease"    
+FROM KidneyDisease;
 
---Average levels of blood urea among patients with and without chronic kidney disease:
+### Cormorbidties Combinations Percentages Table:
 
-       SELECT classification, AVG(blood_urea) as average_blood_urea
-       FROM KidneyDisease
-       GROUP BY classification;
+SELECT
 
---Average levels of sodium among patients with and without chronic kidney disease:
+  COUNT(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension & Diabetes CKD Patients",
+  
+  COUNT(CASE WHEN hypertension = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension & CoronaryArteryDisease CKD Patients",
+  
+  COUNT(CASE WHEN diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Diabetes & CoronaryArteryDisease CKD Patients",
+  
+  COUNT(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of All Comorbidities CKD Patients" 
+FROM KidneyDisease
+WHERE classification = 'ckd';
 
-       SELECT classification, AVG(sodium) as average_sodium
-       FROM KidneyDisease
-       GROUP BY classification;
+### Risk Factors Averages Table:
 
---Average levels of potassium among patients with and without chronic kidney disease:
+SELECT classification,
 
-       SELECT classification, AVG(potassium) as average_potassium
-       FROM KidneyDisease
-       GROUP BY classification;
-       
---Count the number of patients with each comorbidity, grouped by their classification (CKD or notCKD)
+AVG(age) AS "Average Age",
 
-       SELECT classification, 
-          COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) AS hypertension_count,
-          COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) AS diabetes_mellitus_count,
-          COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) AS coronary_artery_disease_count,
-          COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) AS pedal_edema_count,
-          COUNT(CASE WHEN anemia = 'yes' THEN 1 END) AS anemia_count
-       FROM KidneyDisease
-       GROUP BY classification;
-       
---Calculate the percentage of CKD patients grouped by each comorbidity
+AVG(serum_creatinine) AS "Average Creatinine",
 
-      SELECT 
-         COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS percentage_hypertension_ckd_patients,
-         COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS percentage_diabetes_mellitus_ckd_patients,
-         COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS percentage_coronary_artery_disease_ckd_patients,
-         COUNT(CASE WHEN anemia = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS percentage_anemia_ckd_patients,
-         COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS percentage_pedal_edema_ckd_patients
-      FROM KidneyDisease
-      WHERE classification = 'ckd';
+AVG(blood_pressure) AS "Average Blood Pressure",
+
+AVG(blood_glucose_random) AS "Average Blood Glucose Random",
+
+AVG(hemoglobin) AS "Average Hemoglobin",
+
+AVG(blood_urea) AS "Average Blood Urea",
+
+AVG(sodium) AS "Average Sodium",
+
+AVG(potassium) AS "Average Potassium"
+
+FROM KidneyDisease
+
+GROUP BY classification;
 
 
 ____________________________________________________________________________________________________________________________________________________________________
