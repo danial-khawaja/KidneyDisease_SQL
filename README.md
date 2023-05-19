@@ -72,78 +72,69 @@ ________________________________________________________________________________
 ## SQL Queries to identify totals, averages, and percentages of CKD risk factors
 
 
-### Total Patients Table: Count the toal number of patients followed by total patients with each comorbidity / complication grouped by their classification (CKD or notCKD)
+### Total Patients Table: 
+--Count the total number of patients followed by patients with each comorbidity / complication grouped by their classification (CKD or notCKD)
 
-SELECT classification,
-	COUNT(*) AS "Total Patients",       
-	COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) AS "Hypertension Count",      
-	COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) AS "Diabetes Count",      
-	COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) AS "CoronaryArteryDisease Count",      
-	COUNT(CASE WHEN anemia = 'yes' THEN 1 END) AS "Anemia Count",     
-	COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) AS "Edema Count"       
-FROM KidneyDisease
-GROUP BY classification;
+	SELECT classification,
+		COUNT(*) AS "Total Patients",       
+		COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) AS "Hypertension Count",      
+		COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) AS "Diabetes Count",      
+		COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) AS "CoronaryArteryDisease Count",      
+		COUNT(CASE WHEN anemia = 'yes' THEN 1 END) AS "Anemia Count",     
+		COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) AS "Edema Count"       
+	FROM KidneyDisease
+	GROUP BY classification;
 
-### We can see that in this dataset, non-CKD patients do not have any of the associated comorbidities / complications that CKD patients have 
+--We can see that in this dataset, non-CKD patients do not have any of the associated comorbidities / complications that CKD patients have 
 
 
-### Percentages Table: Calculate the percentage of CKD patients grouped by each comorbidity / complication
+### Percentages Table: 
+--Calculate the percentages of CKD patients with each comorbidity / complication
 
-SELECT
-  COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension CKD Patients",  
-  COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Diabetes CKD Patients",  
-  COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage CoronaryArteryDisease CKD Patients",  
-  COUNT(CASE WHEN anemia = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage Anemia CKD Patients",  
-  COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage Edema CKD Patients"  
-FROM KidneyDisease
-WHERE classification = 'ckd';
+	SELECT
+		COUNT(CASE WHEN hypertension = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension CKD Patients",  
+  		COUNT(CASE WHEN diabetes_mellitus = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Diabetes CKD Patients",  
+  		COUNT(CASE WHEN coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage CoronaryArteryDisease CKD Patients",  
+  		COUNT(CASE WHEN anemia = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage Anemia CKD Patients",  
+  		COUNT(CASE WHEN pedal_edema = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage Edema CKD Patients"  
+	FROM KidneyDisease
+	WHERE classification = 'ckd';
 
-### Comorbidities Combinations Table:
+### Multiple Comorbidities Table:
+--Count the number of patients with each combination of multiple comorbidtities
 
-SELECT
-    SUM(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' THEN 1 ELSE 0 END) AS "Hypertension & Diabetes",    
-    SUM(CASE WHEN hypertension = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "Hypertension & CoronaryArteryDisease",   
-    SUM(CASE WHEN diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "Diabetes & CoronaryArteryDisease",  
-    SUM(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "All: Hypertension, Diabetes, CoronaryArteryDisease"    
-FROM KidneyDisease;
+	SELECT
+		SUM(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' THEN 1 ELSE 0 END) AS "Hypertension & Diabetes",
+		SUM(CASE WHEN hypertension = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "Hypertension & CoronaryArteryDisease",
+		SUM(CASE WHEN diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "Diabetes & CoronaryArteryDisease",
+		SUM(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 ELSE 0 END) AS "All: Hypertension, Diabetes, CoronaryArteryDisease"
+	FROM KidneyDisease;
 
-### Cormorbidties Combinations Percentages Table:
+### Multiple Cormorbidties Percentages Table:
+--Calculate the percentages of CKD patients with each combination of multiple comorbidties
 
-SELECT
+	SELECT
+  		COUNT(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension & Diabetes CKD Patients",
+  		COUNT(CASE WHEN hypertension = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension & CoronaryArteryDisease CKD Patients",
+		COUNT(CASE WHEN diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Diabetes & CoronaryArteryDisease CKD Patients",
+		COUNT(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of All Comorbidities CKD Patients"
+	FROM KidneyDisease
+	WHERE classification = 'ckd';
 
-  COUNT(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension & Diabetes CKD Patients",
-  
-  COUNT(CASE WHEN hypertension = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Hypertension & CoronaryArteryDisease CKD Patients",
-  
-  COUNT(CASE WHEN diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of Diabetes & CoronaryArteryDisease CKD Patients",
-  
-  COUNT(CASE WHEN hypertension = 'yes' AND diabetes_mellitus = 'yes' AND coronary_artery_disease = 'yes' THEN 1 END) * 100.0 / COUNT(*) AS "Percentage of All Comorbidities CKD Patients" 
-FROM KidneyDisease
-WHERE classification = 'ckd';
+### Risk Factor Averages Table:
+--Calculate the Averages of all relevant risk factors of CKD
 
-### Risk Factors Averages Table:
-
-SELECT classification,
-
-AVG(age) AS "Average Age",
-
-AVG(serum_creatinine) AS "Average Creatinine",
-
-AVG(blood_pressure) AS "Average Blood Pressure",
-
-AVG(blood_glucose_random) AS "Average Blood Glucose Random",
-
-AVG(hemoglobin) AS "Average Hemoglobin",
-
-AVG(blood_urea) AS "Average Blood Urea",
-
-AVG(sodium) AS "Average Sodium",
-
-AVG(potassium) AS "Average Potassium"
-
-FROM KidneyDisease
-
-GROUP BY classification;
+	SELECT classification,
+		AVG(age) AS "Average Age",
+		AVG(serum_creatinine) AS "Average Creatinine",
+		AVG(blood_pressure) AS "Average Blood Pressure",
+		AVG(blood_glucose_random) AS "Average Blood Glucose Random",
+		AVG(hemoglobin) AS "Average Hemoglobin",
+		AVG(blood_urea) AS "Average Blood Urea",
+		AVG(sodium) AS "Average Sodium",
+		AVG(potassium) AS "Average Potassium"
+	FROM KidneyDisease
+	GROUP BY classification;
 
 
 ____________________________________________________________________________________________________________________________________________________________________
