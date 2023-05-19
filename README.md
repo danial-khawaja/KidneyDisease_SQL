@@ -252,6 +252,22 @@ Policy Makers
 
 - Launch Awareness Campaigns: to educate high-risk populations of the factors that contribute to CKD and how they can take practical steps to prevent its development
 
+### Limitations and Critiques:
+
+Single Study: The analysis is based on a single dataset, limiting generalizability to other populations.
+
+Lack of CKD Stage Specification: The dataset lacks information on CKD stages, limiting understanding of disease progression.
+
+Incomplete Risk Factor Analysis: Not all potential risk factors for CKD are considered in the dataset.
+
+Limited Comorbidity Analysis: The examined comorbidities represent only a subset of possible conditions.
+
+Potential Confounding Variables: Unaccounted variables like age, gender, and lifestyle habits may introduce biases.
+
+Data Collection Bias: Inaccurate or incomplete data entries could affect the validity of the analysis.
+
+In summary, while providing valuable insights, it is important to consider the limitations mentioned above to ensure a comprehensive understanding of CKD and its associated factors.
+
 ### Conclusion: 
 
 Overall, this data analysis highlights the significant impact of the risk factors and comorbidities on the development and progression of CKD. Early detection and management of these risk factors, coupled with regular monitoring of kidney function, can help to prevent or slow down its progression. Through concerted efforts from healthcare providers, researchers, and policy makers, we can work together to improve the lives of those affected by CKD.
