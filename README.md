@@ -254,19 +254,13 @@ Policy Makers
 
 ### Limitations and Critiques:
 
-Single Study: The analysis is based on a single dataset, limiting generalizability to other populations.
+Single Study: This analysis is based on a single dataset, which does not represent the entire population of CKD patients. The findings and statistics obtained may not be generalizable to other populations or regions. Conducting a meta-analysis that combines multiple datasets from diverse sources would provide a more comprehensive and reliable picture of CKD statistics.
 
-Lack of CKD Stage Specification: The dataset lacks information on CKD stages, limiting understanding of disease progression.
+Lack of CKD Stage Specification: This dataset does not specify the stage of CKD for each patient. CKD is a progressive disease that encompasses stages 1 to 5, with stage 5 being end-stage renal disease (ESRD). The absence of stage-specific information limits our understanding of how the risk factors, patient attributes, and comorbidities may vary across different stages of CKD. Analyzing data specific to each CKD stage would provide a more nuanced understanding of disease progression and associated factors.
 
-Incomplete Risk Factor Analysis: Not all potential risk factors for CKD are considered in the dataset.
+Potential Confounding Variables: The dataset used for this analysis may have inherent confounding variables that were not accounted for. Factors like gender, socioeconomic status, diet and lifestyle habits can influence both the development of CKD and the presence of comorbidities. Including these variables would would for a more robust analysis.
 
-Limited Comorbidity Analysis: The examined comorbidities represent only a subset of possible conditions.
-
-Potential Confounding Variables: Unaccounted variables like age, gender, and lifestyle habits may introduce biases.
-
-Data Collection Bias: Inaccurate or incomplete data entries could affect the validity of the analysis.
-
-In summary, while providing valuable insights, it is important to consider the limitations mentioned above to ensure a comprehensive understanding of CKD and its associated factors.
+- In summary, while providing valuable insights, it is important to consider the limitations mentioned above to ensure a comprehensive understanding of CKD and its associated factors.
 
 ### Conclusion: 
 
