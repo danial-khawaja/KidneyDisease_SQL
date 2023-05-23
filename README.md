@@ -201,11 +201,9 @@ Number of CKD Patients with Pedal Edema = 76
 Percentage of CKD Patients with Pedal Edema = 30.6%
 
 
-Risk Factors Averages Dashboard: https://public.tableau.com/views/CKDDatasetAverages/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
 
-
-
-### Data Analysis:
+### Data Analysis Risk Factors Averages Dashboard: 
+https://public.tableau.com/views/CKDDatasetAverages/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
 
 - Patient Demographics - Out of the 398 patients, 248 were diagnosed with CKD while 150 patients did not have CKD. The average age of CKD patients was 54 years, while the average age of Non-CKD patients was 46.
 
