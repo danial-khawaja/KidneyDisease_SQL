@@ -201,6 +201,9 @@ Number of CKD Patients with Pedal Edema = 76
 Percentage of CKD Patients with Pedal Edema = 30.6%
 
 
+Risk Factors Averages Dashboard: https://public.tableau.com/views/CKDDatasetAverages/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
+
+
 
 ### Data Analysis:
 
