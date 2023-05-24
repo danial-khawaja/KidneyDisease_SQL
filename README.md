@@ -15,55 +15,55 @@ Dataset:
 
 Table Name: KidneyDisease
 
-id = patient id - (there are 398 total patients and values range from 0-397 and are arranged in ascending order to specify patient id)
+id = patient id - (there are 398 total patients and values range from 0-397 and are arranged in ascending order to specify each patient)
 
-age = age of the patient
+age
 
-blood_pressure = patient's blood pressure level
+blood_pressure
 
-specific_gravity = patient's specific gravity level
+specific_gravity
 
-albumin = patient's albumin level
+albumin
 
-sugar = patient's sugar level
+sugar
 
-red_blood_cells = values are "normal" or "abnormal". "normal" refers to the patient having red blood cells in the normal range. "abnormal" refers to the patient having red blood cells in the abnormal range
+red_blood_cells = values are "normal" or "abnormal"
 
-pus_cell = values are "normal" or "abnormal". "normal" refers to the patient having red blood cells in the normal range. "abnormal" refers to the patient having red blood cells in the abnormal range
+pus_cell = values are "normal" or "abnormal"
 
 pus_cell_clumps = values are "present" or "notpresent"
 
-bacteria = values are "present" or "notpresent". "present" refers to patient having bacteria in the kidneys. "notpresent" refers to patient not having bacteria in the kidneys
+bacteria = values are "present" or "notpresent"
 
-blood_glucose_random = patient's random glucose testing level
+blood_glucose_random
 
-blood_urea = measures the amount of urea nitrogen in the blood
+blood_urea
 
-serum_creatinine = patient’s creatinine levels
+serum_creatinine
 
-sodium = patient’s sodium level
+sodium
 
-potassium = patient’s potassium level
+potassium 
 
-hemoglobin = patient’s hemoglobin level
+hemoglobin 
 
-packed_cell_volume = patient’s red blood cell mass
+packed_cell_volume 
 
-white_blood_cell_count = patient’s white blood cell count
+white_blood_cell_count
 
-red_blood_cell_count = patient’s red blood cell count
+red_blood_cell_count
 
-hypertension = values are "yes" or "no". "yes" refers to the patient having hypertension (high blood pressure). "no" refers to the patient not having hypertension
+hypertension = values are "yes" or "no"
 
-diabetes_mellitus = values are "yes" or "no". "yes" refers to the patient having diabetes mellitus. "no" refers to the patient not having diabetes mellitus
+diabetes_mellitus = values are "yes" or "no"
 
-coronary_artery_disease = values are "yes" or "no". "yes" refers to the patient having coronary artery disease. "no" refers to the patient not having coronary artery disease
+coronary_artery_disease = values are "yes" or "no"
 
-appetite = values are "good" or "bad". "good" refers to the patient having a healthy diet in relation to kidney disease. "bad" refers to the patient having an unhealthy diet in relation to kidney disease
+appetite = values are "good" or "bad"
 
-pedal_edema = values are "yes" or "no". "yes" refers to the patient having pedal edema. "no" refers to the patient not having pedal edema
+pedal_edema = values are "yes" or "no"
 
-anemia = values are "yes" or "no". "yes" refers to the patient having anemia. "no" refers to the patient not having anemia
+anemia = values are "yes" or "no"
 
 classification = refers to whether the patient has chronic kidney disease or not. Values are “ckd” or “notckd”. “ckd” refers to the patient having chronic kidney disease. “notckd” refers to the patient not having chronic kidney disease
        
