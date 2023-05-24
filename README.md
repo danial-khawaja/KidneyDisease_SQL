@@ -5,11 +5,10 @@ Objective:
 
 Chronic kidney disease (CKD) is a serious medical condition that affects a significant proportion of the population. I will analyze the clinical data to identify trends and statistics in CKD patients. My findings can be used to improve early diagnosis and treatment of chronic kidney disease, and to develop preventive measures to reduce its incidence.
 
-The dataset was compiled over a 2-month period in India of patients in one hospital. This table contains 398 rows of patients and includes information on several medical attributes such as blood test levels, and comorbidities associated with chronic kidney disease. The table has two values in the classification column: "ckd" and "notckd". The target is to highlight the differences in medical attributes for patients that have CKD and Non-CKD patients. This will give insight into how chronic kidney disease affects our metabolic numbers and what are the most common comorbidities that increase the progression of CKD.
+The dataset was compiled over a 2-month period in India of one hospital. This table contains 398 rows of patients and includes information on several medical attributes such as blood test levels, and comorbidities associated with chronic kidney disease. The table has two values in the classification column: "ckd" and "notckd". The target is to highlight the differences in medical attributes for patients that have CKD and Non-CKD patients. This will give insight into how chronic kidney disease affects our metabolic numbers and what are the most common comorbidities that increase the progression of CKD.
 
-Dataset:
 
-- Link: https://www.kaggle.com/datasets/mansoordaku/ckdisease
+- Dataset: https://www.kaggle.com/datasets/mansoordaku/ckdisease
 
 ### Table Legend & Column Names
 
@@ -202,7 +201,8 @@ Percentage of CKD Patients with Pedal Edema = 30.6%
 
 
 
-### Data Analysis Risk Factors Averages Dashboard: 
+### Data Analysis:
+
 https://public.tableau.com/views/CKDvs_non-CKDPatientsRiskFactorAverages/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link
 
 - Patient Demographics - Out of the 398 patients, 248 were diagnosed with CKD while 150 patients did not have CKD. The average age of CKD patients was 54 years, while the average age of Non-CKD patients was 46.
@@ -216,16 +216,15 @@ https://public.tableau.com/views/CKDvs_non-CKDPatientsRiskFactorAverages/Dashboa
 - Hemoglobin & Anemia - The average hemoglobin level of CKD patients was 10.6 g/dL, while the average hemoglobin level of Non-CKD patients was 15.2. 59 patients out of 248 with CKD had anemia (23.8%).
 
 
-
 ### Insights:
 
-This data analysis has identified several important trends in the characteristics of patients with chronic kidney disease (CKD). Patients with CKD tend to be older, with a statistically significant difference of 6 years compared to those without CKD. This highlights the importance of regular monitoring of kidney function in elderly patients, especially those with known risk factors for CKD.
+This data analysis has identified several relevant medical trends in the characteristics of patients with chronic kidney disease (CKD). Patients with CKD tend to be older. This highlights the importance of regular monitoring of kidney function in elderly patients, especially those with known risk factors for CKD.
 
-Additionally, patients with CKD tend to have higher levels of serum creatinine, hypertension, and diabetes mellitus, all of which are established risk factors for the development and progression of CKD. These findings underscore the importance of early detection and management of these risk factors to prevent the onset and progression of CKD.
+Additionally, patients with CKD tend to have higher levels of creatinine, blood pressure, glucose, and uric acid, all of which are established risk factors for the development and progression of CKD. These findings underscore the importance of early detection and management of these risk factors to prevent the onset and progression of CKD.
 
 Furthermore, the data analysis revealed that patients with CKD have lower levels of hemoglobin, packed cell volume, and red blood cell count, indicating a high prevalence of anemia. Anemia is a common complication of CKD and is associated with increased morbidity and mortality. Healthcare providers should routinely screen patients with CKD for anemia and initiate appropriate treatment to improve patient outcomes.
 
-Finally, this analysis highlights the importance of regular monitoring of symptoms and comorbidities in patients with CKD. Pedal edema was the most commonly reported symptom, while hypertension, diabetes mellitus, and coronary artery disease were the most commonly reported comorbidities. Healthcare providers should routinely assess and manage these conditions to improve patient outcomes.
+Finally, this analysis highlights the importance of regular monitoring of symptoms and comorbidities in patients with CKD. Pedal edema was the most commonly reported symptom, while hypertension, diabetes, and coronary artery disease were the most commonly reported comorbidities. Healthcare providers should routinely assess and manage these conditions to improve patient outcomes.
 
 ### Action Items:
 
@@ -253,15 +252,15 @@ Policy Makers
 
 - Launch Awareness Campaigns: to educate high-risk populations of the factors that contribute to CKD and how they can take practical steps to prevent its development
 
-### Limitations and Critiques:
+### Limitations:
 
-Single Study: This analysis is based on a single dataset, which does not represent the entire population of CKD patients. The findings and statistics obtained may not be generalizable to other populations or regions. Conducting a meta-analysis that combines multiple datasets from diverse sources would provide a more comprehensive and reliable picture of CKD statistics.
+Single Study: This analysis is based on a single dataset, which does not represent the entire population of CKD patients, where individual genetic, socioeconomic, and regional differences have an impact on the progression and treatment of CKD. Conducting a meta-analysis that combines multiple datasets from diverse sources would provide a more clear picture of CKD statistics.
 
-Lack of CKD Stage Specification: This dataset does not specify the stage of CKD for each patient. CKD is a progressive disease that encompasses stages 1 to 5, with stage 5 being end-stage renal disease (ESRD). The absence of stage-specific information limits our understanding of how the risk factors, patient attributes, and comorbidities may vary across different stages of CKD. Analyzing data specific to each CKD stage would provide a more nuanced understanding of disease progression and associated factors.
+Lack of CKD Stage Specification: This dataset does not specify the stage of CKD for each patient. CKD is a progressive disease that encompasses stages 1 to 5, with stage 5 being end-stage renal disease (ESRD). The absence of stage-specific information limits our understanding of how the risk factors, patient attributes, and comorbidities may vary across different stages of CKD. Analyzing data specific to each CKD stage would provide a nuanced understanding of disease progression and associated factors.
 
-Potential Confounding Variables: The dataset used for this analysis may have inherent confounding variables that were not accounted for. Factors like gender, socioeconomic status, diet and lifestyle habits can influence both the development of CKD and the presence of comorbidities. Including these variables would would for a more robust analysis.
+Potential Confounding Variables: The dataset used for this analysis may have inherent confounding variables that were not accounted for. Factors like gender, socioeconomic status, family history, diet and lifestyle habits can influence both the development of CKD and the presence of comorbidities. Including these variables would make for a more robust analysis.
 
-- In summary, while providing valuable insights, it is important to consider the limitations mentioned above to ensure a comprehensive understanding of CKD and its associated factors.
+- In summary, while providing valuable insights from real world data and reinforcing trends understood in CKD, it is important to consider the limitations mentioned above to ensure a comprehensive understanding of the disease.
 
 ### Conclusion: 
 
